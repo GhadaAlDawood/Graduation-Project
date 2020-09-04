@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/backgroundapp2"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/customer" />
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/commsuggest"
+                android:textColor="@color/WHITE"
+                android:layout_gravity="center"
+                android:paddingLeft="3dp"
+                android:textSize="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"/>
+            <TextView
+                android:id="@+id/tv_priceoffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WHITE"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btn_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/accepted"
+                android:gravity="center"
+                android:textColor="@color/WHITE"
+                android:background="@drawable/ground_buttonaccept"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/btn_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="@string/vieworder"
+                android:textColor="@color/WHITE"
+                android:background="@drawable/ground_buttondecline"/>
+            <Button
+                android:id="@+id/btn_panding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="@string/pand"
+                android:textColor="@color/WHITE"
+                android:background="@drawable/ground_buttondecline"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Shater</string>
+    <string name="start">Get Started</string>
+    <string name="cutomer_btn">Customer</string>
+    <string name="provider_btn">Service Provider</string>
+    <string name="SignIn">Sign In</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail</string>
+    <string name="password">PassWord</string>
+    <string name="phone">Phone Number</string>
+    <string name="experience">Experience</string>
+    <string name="chooseType">CHOOSE THE ACCOUNT TYPE</string>
+    <string name="accept">Accept</string>
+    <string name="accepted">Accepted</string>
+    <string name="vieworder">View Order</string>
+    <string name="pand">Panding</string>
+    <string name="decline">Decline</string>
+    <string name="commservice">Service Provider Rating :</string>
+    <string name="commsuggest">Your Suggested price </string>
+    <string name="selectService">SELECT A SERVICE</string>
+    <string name="decor">Home Decor</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="painting">Painting</string>
+    <string name="parking">Parking Shades</string>
+    <string name="electricity">Electricity</string>
+    <string name="technology">Technology</string>
+    <string name="titleRequest">REQUEST FROM</string>
+    <string name="titleselectcateg">Select the service Category</string>
+    <string name="time" >Time :</string>
+    <string name="date" >Date :</string>
+    <string name="titledesc">Add your problem description</string>
+    <string name="addimage">Add Image</string>
+    <string name="addvideo">Add video</string>
+    <string name="titlelocation">Enter your Location</string>
+    <string name="confirm">Confirm</string>
+    <string name="make">Make an Offer</string>
+    <string name="displaycustomerRequ">Not Found Request From Customer</string>
+    <string name="logout">LogOut</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

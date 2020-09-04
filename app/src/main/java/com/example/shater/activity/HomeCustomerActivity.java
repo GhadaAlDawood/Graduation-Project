@@ -1,0 +1,66 @@
+package com.example.shater.activity;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.example.shater.R;
+import com.example.shater.fragment.AccountFragment;
+import com.example.shater.fragment.CustomerFragment;
+import com.example.shater.fragment.OfferCustomerFragment;
+import com.example.shater.fragment.OfferServiceFragment;
+import com.example.shater.fragment.RequestFragment;
+import com.example.shater.fragment.ServiceFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class HomeCustomerActivity extends AppCompatActivity {
+    BottomNavigationView bottomNavigationView ;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_nav_customer);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment fragment ;
+                switch (item.getItemId()) {
+                    case R.id.action_service:
+                        fragment = new ServiceFragment();
+                        loadFragment(fragment);
+                        Toast.makeText(HomeCustomerActivity.this, "Service", Toast.LENGTH_SHORT).show();
+                        break;
+//                    case R.id.action_request:
+//                        fragment = new RequestFragment();
+//                        loadFragment(fragment);
+//                        Toast.makeText(HomeCustomerActivity.this, "Request", Toast.LENGTH_SHORT).show();
+//                        break;
+                    case R.id.action_offer:
+                        fragment = new OfferCustomerFragment();
+                        loadFragment(fragment);
+                        Toast.makeText(HomeCustomerActivity.this, "offer", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_account:
+                        fragment =  new AccountFragment();
+                        loadFragment(fragment);
+                        Toast.makeText(HomeCustomerActivity.this, "account", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return true;
+            }
+        });
+    }
+
+    private void loadFragment (Fragment fragment){
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fram_customer , fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+}

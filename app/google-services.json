@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "904433597215",
+    "firebase_url": "https://shaterapp.firebaseio.com",
+    "project_id": "shaterapp",
+    "storage_bucket": "shaterapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904433597215:android:0a6627be6bc1c8fe108e2a",
+        "android_client_info": {
+          "package_name": "com.example.shater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904433597215-ep5l86dtdhoerovuahe7qn03v4h8l09p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shater",
+            "certificate_hash": "67e1233ab95b67efdb9b9b401b86832598264b21"
+          }
+        },
+        {
+          "client_id": "904433597215-6fqhuc6t69fl7obk66ukeq71jcdbr0fk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEqlqXpFn4sRebHdfIOZ6csf9mEsuva-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904433597215-6fqhuc6t69fl7obk66ukeq71jcdbr0fk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
